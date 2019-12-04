@@ -8,7 +8,8 @@ import ColorButton from './colorButton.js'
 export default class App extends Component {
     state = { dinos:[],
              colors:[],
-             usercard:""
+             dino_img:"",
+             color:""
     }
   componentDidMount(){
     fetch("http://localhost:3000/dinos")
@@ -28,15 +29,35 @@ export default class App extends Component {
     }) 
   }
 
+  handleDinoClick = (new_dino_img) => {
+    console.log("from the dinoClick", new_dino_img);
+    this.setState({ 
+        dino_img:new_dino_img
+    })
+  }
+  
+  handleColorClick = (new_card_color) => {
+    this.setState({ 
+      color:new_card_color
+  })
+  }
+  
   render() {
+    let {dinoCards} = this.state.dinos
     return (
-      <div>
-        <ul className="App">1. Choose a Dino.</ul>
-          <DinoButton className="App" dinos={this.state.dinos}/>
-          <div>
+      <div className="app">
+        <div className="dinoContainer">
+        <ul>1. Choose a Dino.</ul>
+          <DinoButton handleDinoClick={this.handleDinoClick} 
+                      className="dinobutton" 
+                      dinos={this.state.dinos}/>
+        </div>
+        <div>
         <ul>2. Choose a Color.</ul>
             <ul className="color button">
-            < ColorButton colors={this.state.colors}/>
+            <ColorButton  handleColorClick={this.handleColorClick} 
+
+                          colors={this.state.colors}/>
               {/* <button className="button button1"></button>
               <button className="button button2"></button>
               <button className="button button3"></button>
@@ -45,14 +66,17 @@ export default class App extends Component {
               <button className="button button6"></button>
               <button className="button button7"></button> */}
             </ul>
-            </div>
+          </div>
           <ul>3.Enter Your Name.</ul>
+          <div className="app">
           <Nameform />
+          </div> 
+
+          <div className="app">
           <div className="card">
           </div>
-          <div className="container center">
-            <p className="App">New Dino Card Here</p>
-          <DinoCard /> 
+            <p>Dino Card</p>
+          <DinoCard dinoImg={this.state.dino_img} color={this.state.color}/> 
           </div>
       </div>
     )
