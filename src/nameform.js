@@ -6,14 +6,20 @@ export default class Nameform extends Component {
     }
 
     handleChange = (event) => {
-        console.log(event.target.name)
+        event.preventDefault()
         this.setState({[event.target.name]:event.target.value})
     }
 
+    onSubmit = (event) => {
+        event.preventDefault()
+        this.props.handleSubmit(this.state.value)
+        this.setState({value:""})
+    }
+    
     render() {
         return (
             <div>
-                <form>
+                <form onSubmit={this.onSubmit}>
                     <label>
                             Name:
                         <input onChange={this.handleChange} type="text" name="value" />

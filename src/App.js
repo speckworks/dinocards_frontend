@@ -9,8 +9,10 @@ export default class App extends Component {
     state = { dinos:[],
              colors:[],
              dino_img:"",
-             color:""
+             color:"",
+             name:""
     }
+    
   componentDidMount(){
     fetch("http://localhost:3000/dinos")
     .then(res=>res.json())
@@ -41,6 +43,11 @@ export default class App extends Component {
       color:new_card_color
   })
   }
+
+  handleSubmit = (newCardName) => {
+    this.setState({name:newCardName})
+  }
+  
   
   render() {
     let {dinoCards} = this.state.dinos
@@ -69,14 +76,14 @@ export default class App extends Component {
           </div>
           <ul>3.Enter Your Name.</ul>
           <div className="app">
-          <Nameform />
+          <Nameform handleSubmit={this.handleSubmit}/>
           </div> 
 
           <div className="app">
           <div className="card">
           </div>
             <p>Dino Card</p>
-          <DinoCard dinoImg={this.state.dino_img} color={this.state.color}/> 
+          <DinoCard name={this.state.name} dinoImg={this.state.dino_img} color={this.state.color}/> 
           </div>
       </div>
     )
