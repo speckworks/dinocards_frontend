@@ -5,9 +5,12 @@ export default class dinoCard extends Component {
 
         return (
             <div    className="card" 
-                    style={{background:this.props.color}}>
+                    style={{
+                        background:this.props.color}}>
             <div>  {this.props.name}</div>
-            <img    src={this.props.dinoImg} alt="dinosaur" className="card"></img> 
+            <img    src={this.props.dinoImg} 
+                    alt="dinosaur" 
+                    className="card"></img> 
             </div>
         )
     }

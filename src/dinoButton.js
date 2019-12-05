@@ -20,12 +20,6 @@ export default class DinoButton extends Component {
             <div>
             <ul>
             {dinosArray}
-              {/* <button className="button dinobutton2"></button>
-              <button className="button dinobutton3"></button>
-              <button className="button dinobutton4"></button>
-              <button className="button dinobutton5"></button>
-              <button className="button dinobutton6"></button>
-              <button className="button dinobutton7"></button> */}
             </ul>
             </div>
         )

@@ -12,7 +12,17 @@ export default class Nameform extends Component {
 
     onSubmit = (event) => {
         event.preventDefault()
-        this.props.handleSubmit(this.state.value)
+        let newUser = (this.state.value)
+        const url = "http://localhost:3000/users"
+        let newUserObject = newUser
+        fetch(url, {method: 'POST',
+                    body:JSON.stringify(newUserObject),//this needs to be formatted to set the name property of User in Backend
+                    headers: {'content-type':'application/json'}
+                })
+                .then(res=>res.json())
+                .catch(error=>console.error("Error:",error))
+                .then(response=>console.log('Success:',response));
+        this.props.handleNameSubmit(newUser)
         this.setState({value:""})
     }
     
