@@ -9,7 +9,9 @@ export default class DinoButton extends Component {
         // console.log("from the DinoButton", this.props.dinos)
         const dinosArray = this.props.dinos.map(
             (dino)=>{
-            return <button  onClick={()=>this.props.handleDinoClick(dino.img)}
+            return <button  onClick={
+                            ()=>this.props.handleDinoClick(dino.img)
+                                    }
                             style={{backgroundImage: `url("${dino.img}")`}} 
                             key={dino.id}
                             className="dinobutton"></button>

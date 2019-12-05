@@ -6,9 +6,8 @@ export default class dinoCard extends Component {
         return (
             <div    className="card" 
                     style={{background:this.props.color}}>
-            <div>{this.props.name}</div>
-            <img src={this.props.dinoImg}></img>
-                {/* <div style={{backgroundImage: `url("${this.props.dinoImg}")`}}>yer dino</div> */}
+            <div>  {this.props.name}</div>
+            <img    src={this.props.dinoImg} alt="dinosaur" className="card"></img> 
             </div>
         )
     }
