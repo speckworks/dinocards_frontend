@@ -6,7 +6,7 @@ import './App.css';
 export default class DinoButton extends Component {
 
     render() {
-        // console.log("from the DinoButton", this.props.dinos)
+        console.log("from the DinoButton", this.props.dinos)
         const dinosArray = this.props.dinos.map(
             (dino)=>{
             return <button  onClick={

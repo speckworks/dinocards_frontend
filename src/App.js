@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import './App.css';
-import DinoButton from './dinoButton.js'
-import ColorButton from './colorButton.js'
 import CardList from './cardList.js'
+// import dinoCard from './dinoCard';
 
 export default class App extends Component {
     state = { dinos:[],
              colors:[],
-             dinocards:[]
+             dinocards:[],
+             users:[]
             }
 
   componentDidMount(){
@@ -35,65 +35,46 @@ export default class App extends Component {
       })
     }) 
   }
-}
-  
-  handleDinoClick = (new_dino_img) => {
-    
-        console.log("from the dinoClick", new_dino_img);
-        const newdinocards = [...this.state.dinocards]
-        newdinocards.img = new_dino_img
-        this.setState({ dinocards:newdinocards
-           })
+
+
+  createDinoCard = (dinoCard) =>{
+    let prevDinoCards = this.state.dinocards
+    prevDinoCards.push(dinoCard)
+    this.setState({dinocards:prevDinoCards})
   }
 
-  handleColorClick = (new_card_color) => {
-    const newdinocards = [...this.state.dinocards]
-    newdinocards.color = new_card_color
-      this.setState({ 
-        dinocards:newdinocards
-      })
+  deleteDino = (cardId) => {
+    const url = `http://localhost:3000/user_cards/${cardId}`
+        fetch(url, {method: 'DELETE'})
+        .then(res=>res.json())
+        .catch(error=>console.error("Error:", error))
+        .then(response=>{
+          let dinocards = this.state.dinocards.filter(dinocard =>  dinocard.id !== cardId )
+          this.setState({dinocards:dinocards})
+  })
   }
-  
-  handleNameSubmit = (newUser) => {
-    const newdinocards = [...this.state.dinocards]
-    newdinocards.name = newUser
-      this.setState({     
-        dinocards:newdinocards
-    })
-  }
-  
 
+  getDinoCards = () => {
+    fetch("http://localhost:3000/user_cards")
+    .then(res=>res.json())
+    .then(dinoCardsObj =>{
+      console.log(dinoCardsObj)
+    })  
+  }
+  
   render() {
     return (
       <div className="app">
-        <div className="dinoContainer">
-        <ul>1. Choose a Dino.</ul>
-          <DinoButton handleDinoClick={this.handleDinoClick} 
-                      className="dinobutton" 
-                      dinos={this.state.dinos}/>
-        </div>
-        <div>
-        <ul>2. Choose a Color.</ul>
-            <ul className="color button">
-            <ColorButton  handleColorClick={this.handleColorClick} 
-                          colors={this.state.colors}/>
-
-            </ul>
-          </div>
-          <div className="app">
-          </div> 
-
-          <div className="app">
-          <div className="card">
-          </div>
-          <p>Dino Card List</p>
+          <p></p>
+          <button onClick={this.getDinoCards}>Fetch All the DinoCards</button>
           <CardList 
-                dinocards={this.state.dinocards} 
-                name={this.state.name} 
-                dinoImg={this.state.img} 
-                color={this.state.color}
-                handleNameSubmit={this.handleNameSubmit}/>
-          </div>
+                colors={this.state.colors}
+                dinos={this.state.dinos} 
+                dinocards={this.state.dinocards}
+                handleNameSubmit={this.handleNameSubmit}
+                createDinoCard={this.createDinoCard}
+                deleteDino={this.deleteDino}
+                />
       </div>
     )
   }

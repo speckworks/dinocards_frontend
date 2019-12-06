@@ -4,21 +4,26 @@ import Nameform from './nameform.js';
 import './App.css';
 
 export default class cardList extends Component {
-    
     render() {
-        const dinocard = this.props.dinocards.map(
-            (card) => {
+
+        let dinocard;
+        if (this.props.dinocards.length > 0) {
+            dinocard = this.props.dinocards.map((card) => {
+                // console.log(dinocards)
             return <DinoCard 
             key={card.id} 
-            name={card.name} 
-            dinoImg={card.dino_img} 
-            color={card.color}/>
-            }
-        )
+            deleteDino={this.props.deleteDino}
+            dinocard={card}/>
+            })
+        }
+
         return (
             <div>
-                <ul>3.Enter Your Name.</ul>
-                <Nameform handleNameSubmit={this.props.handleNameSubmit}/>
+                <Nameform 
+                createDinoCard={this.props.createDinoCard}
+                colors={this.props.colors}
+                dinos={this.props.dinos} 
+                handleNameSubmit={this.props.handleNameSubmit}/>
                 <div>
                 {dinocard}
                 </div>
