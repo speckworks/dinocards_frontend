@@ -42,3 +42,7 @@ height:350px;
 /* justify-content: center; */
 border-color: rgb(238, 223, 10);
 }
+
+.formsubmit{
+  width: 40px;
+}

@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import DinoButton from './dinoButton.js'
 import ColorButton from './colorButton.js'
+import './App.css';
+
 
 export default class Nameform extends Component {
     state={
@@ -24,7 +26,6 @@ export default class Nameform extends Component {
         event.preventDefault()
         let img = this.state.dinoFormImg
         let color = this.state.dinoFormColor
-        // debugger;
         let name = this.state.name
         if (!img || !color || !name){
             return  //this line returns out of onSubmit when data isn't valid
@@ -77,11 +78,11 @@ export default class Nameform extends Component {
                             value={this.state.name}
                             autoComplete="off"
                             />
-                    <input  value={this.state.dinoFormImg}
+                    <input  defaultValue={this.state.dinoFormImg}
                             autoComplete="off"></input>
-                    <input  value={this.state.dinoFormColor}
+                    <input  defaultValue={this.state.dinoFormColor}
                             autoComplete="off"></input>
-                    <button type="submit" value="Submit" />
+                    <button type="submit" value="Submit" style={{className:"formSubmit"}} />
                 </form>
             </div>
         )

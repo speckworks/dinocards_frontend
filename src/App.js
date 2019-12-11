@@ -36,7 +36,6 @@ export default class App extends Component {
     }) 
   }
 
-
   createDinoCard = (dinoCard) =>{
     let prevDinoCards = this.state.dinocards
     prevDinoCards.push(dinoCard)
@@ -61,12 +60,20 @@ export default class App extends Component {
       console.log(dinoCardsObj)
     })  
   }
+
+  reverse = () => {
+    let dinocardsR = this.state.dinocards
+    let dinocardsR2 = [...dinocardsR]
+    let dinocardsRR = dinocardsR2.reverse()
+    this.setState({dinocards:dinocardsRR});
+  }
+  
   
   render() {
     return (
       <div className="app">
           <p></p>
-          <button onClick={this.getDinoCards}>Fetch All the DinoCards</button>
+          {/* <button onClick={this.getDinoCards}>Fetch All the DinoCards</button> */}
           <CardList 
                 colors={this.state.colors}
                 dinos={this.state.dinos} 
@@ -74,6 +81,7 @@ export default class App extends Component {
                 handleNameSubmit={this.handleNameSubmit}
                 createDinoCard={this.createDinoCard}
                 deleteDino={this.deleteDino}
+                reverse={this.reverse}
                 />
       </div>
     )

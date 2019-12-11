@@ -8,7 +8,8 @@ export default class dinoCard extends Component {
                     style={{
                     background:card.color}}>
             {card.name}
-            <button onClick={()=>this.props.deleteDino(card.id)} className="app">Delete</button>
+            <button onClick={()=>this.props.deleteDino(card.id)} 
+                    className="app">Delete</button>
             <img    src={`${card.img}`}
                     alt="dinosaur" 
                     className="card"></img> 
