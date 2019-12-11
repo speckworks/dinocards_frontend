@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import './App.css';
 import CardList from './cardList.js'
-// import dinoCard from './dinoCard';
 
 export default class App extends Component {
     state = { dinos:[],
@@ -73,7 +72,6 @@ export default class App extends Component {
     return (
       <div className="app">
           <p></p>
-          {/* <button onClick={this.getDinoCards}>Fetch All the DinoCards</button> */}
           <CardList 
                 colors={this.state.colors}
                 dinos={this.state.dinos} 

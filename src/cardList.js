@@ -5,7 +5,6 @@ import './App.css';
 
 export default class cardList extends Component {
     render() {
-
         let dinocard;
         if (this.props.dinocards.length > 0) {
             dinocard = this.props.dinocards.map((card) => {
@@ -32,3 +31,17 @@ export default class cardList extends Component {
         )
     }
 }
+
+
+
+
+// let dinocard;
+//         if (this.props.dinocards.length > 0) {
+//             dinocard = this.props.dinocards.map((card) => {
+//                 // console.log(dinocards)
+//             return <DinoCard 
+//             key={card.id} 
+//             deleteDino={this.props.deleteDino}
+//             dinocard={card}/>
+//             })
+//         }
