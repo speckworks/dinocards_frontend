@@ -24,7 +24,11 @@ export default class cardList extends Component {
                 dinos={this.props.dinos} 
                 handleNameSubmit={this.props.handleNameSubmit}/>
                 <div>
-                <button onClick={()=>this.props.reverse(dinocard)}>Reverse</button>
+                <button 
+                onClick={
+                    ()=>this.props.reverse(dinocard)
+                    }>Reverse
+                </button>
                 {dinocard}
                 </div>
             </div>
@@ -32,16 +36,3 @@ export default class cardList extends Component {
     }
 }
 
-
-
-
-// let dinocard;
-//         if (this.props.dinocards.length > 0) {
-//             dinocard = this.props.dinocards.map((card) => {
-//                 // console.log(dinocards)
-//             return <DinoCard 
-//             key={card.id} 
-//             deleteDino={this.props.deleteDino}
-//             dinocard={card}/>
-//             })
-//         }
