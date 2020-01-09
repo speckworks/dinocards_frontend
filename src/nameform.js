@@ -78,11 +78,16 @@ export default class Nameform extends Component {
                             value={this.state.name}
                             autoComplete="off"
                             />
+                            Dino Chosen:
                     <input  defaultValue={this.state.dinoFormImg}
                             autoComplete="off"></input>
+                            Color Chosen:
                     <input  defaultValue={this.state.dinoFormColor}
                             autoComplete="off"></input>
-                    <button type="submit" value="Submit" style={{className:"formSubmit"}} />
+                    <button type="submit" 
+                            value="Submit"
+                            id="submitButton" 
+                            style={{className:"formSubmit"}} >Submit</button>
                 </form>
             </div>
         )

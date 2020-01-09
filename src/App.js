@@ -71,7 +71,7 @@ export default class App extends Component {
   render() {
     return (
       <div className="app">
-          <p></p>
+          <p id="title">Dinosaur Cards</p>
           <CardList 
                 colors={this.state.colors}
                 dinos={this.state.dinos} 

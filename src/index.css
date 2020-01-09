@@ -11,3 +11,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+#submitButton{
+width:100px;
+text-decoration: brown;
+font-size: 16px;
+}
+
+#reverse{
+  width:100px;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.deleteButton{
+  height: 75px;
+  width:100px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+#title{
+  font-size: 50px;
+  text-overflow:none;
+  width:300px;
+  transform: translate(50px,0px);
+  font-family: 'Kaushan Script', cursive;
+}

@@ -27,7 +27,9 @@ export default class cardList extends Component {
                 <button 
                 onClick={
                     ()=>this.props.reverse(dinocard)
-                    }>Reverse
+                    }
+                id="reverse"
+                    >Reverse
                 </button>
                 {dinocard}
                 </div>
