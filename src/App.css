@@ -46,3 +46,14 @@ border-color: rgb(238, 223, 10);
 .formsubmit{
   width: 40px;
 }
+
+.deleteButton{
+  padding:10px;
+  height: 50px;
+
+}
+
+.cardContent{
+  display: flex;
+  flex-wrap: wrap;
+}

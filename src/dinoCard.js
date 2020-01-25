@@ -6,15 +6,14 @@ export default class dinoCard extends Component {
         let card = this.props.dinocard
         // {console.log("dinocard", this.props.dinocard)}
         return (
-            <Card>
+            <Card  style={{
+                background:card.color}}>
             <Image src={card.img}/>
-            <Card.Content>
-              <Card.Header>{card.name}</Card.Header>
+            <Card.Content className="cardContent">
+              <Card.Header>User Name: {card.name}</Card.Header>
               <Card.Description style={{
                     background:card.color}}>
               </Card.Description>
-            </Card.Content>
-            <Card.Content>
               <button onClick={()=>this.props.deleteDino(card.id)} 
                     className="deleteButton">Delete</button>
             </Card.Content>
@@ -22,16 +21,3 @@ export default class dinoCard extends Component {
         )
     }
 }
-
-
-// <div    className="app" 
-//                     style={{
-//                     background:card.color}}>
-//             {card.name}
-//             <button onClick={()=>this.props.deleteDino(card.id)} 
-//                     className="deleteButton">Delete</button>
-//             <img    src={`${card.img}`}
-//                     alt="dinosaur" 
-//                     className="card"></img> 
-            
-//             </div>
