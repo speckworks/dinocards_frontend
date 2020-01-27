@@ -1,3 +1,12 @@
+This is an app that allows a user to create custom "Dinosaur Cards" with user input.  One can Name a card, select a somewhat randomized image and add a background color to it.  
+
+All Dinosaur images were sourced courtesy of https://dinosaurpictures.org/. 
+
+It was created with a Rails backend and a React.js front end. 
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
