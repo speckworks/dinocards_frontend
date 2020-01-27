@@ -23,7 +23,8 @@ export default class cardList extends Component {
                 colors={this.props.colors}
                 dinos={this.props.dinos} 
                 handleNameSubmit={this.props.handleNameSubmit}/>
-                <div>
+
+                <div id="card-list">
                 <button 
                 onClick={
                     ()=>this.props.reverse(dinocard)

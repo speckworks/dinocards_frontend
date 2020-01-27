@@ -11,11 +11,11 @@ export default class dinoCard extends Component {
             <Image src={card.img}/>
             <Card.Content className="cardContent">
               <Card.Header>User Name: {card.name}</Card.Header>
+              <button onClick={()=>this.props.deleteDino(card.id)} 
+                    className="deleteButton">Delete</button>
               <Card.Description style={{
                     background:card.color}}>
               </Card.Description>
-              <button onClick={()=>this.props.deleteDino(card.id)} 
-                    className="deleteButton">Delete</button>
             </Card.Content>
           </Card>
         )

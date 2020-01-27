@@ -27,9 +27,9 @@ export default class Nameform extends Component {
         let img = this.state.dinoFormImg
         let color = this.state.dinoFormColor
         let name = this.state.name
-        // if (!img || !color || !name){
-        //     return  //this line returns out of onSubmit when data isn't valid
-        // } 
+        if (!img || !color || !name){
+            return  //this line returns out of onSubmit when data isn't valid
+        } 
         let colorId = this.props.colors.filter(colorObj => colorObj.color === color)[0].id
         let dinoId = this.props.dinos.filter(dino => dino.img === img)[0].id
         let dinoCardBE = {user_id:1, color_id:colorId, dino_id:dinoId}
