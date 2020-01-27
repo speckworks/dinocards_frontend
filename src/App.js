@@ -10,7 +10,7 @@ export default class App extends Component {
             }
 
   componentDidMount(){
-    fetch("http://localhost:3000/dinos")
+    fetch("https://hidden-fjord-86683.herokuapp.com/dinos")
     .then(res=>res.json())
     .then(dinoObj =>{
       this.setState({
@@ -18,7 +18,7 @@ export default class App extends Component {
       })
     }) 
 
-    fetch("http://localhost:3000/colors")
+    fetch("https://hidden-fjord-86683.herokuapp.com/colors")
     .then(res=>res.json())
     .then(colorObj =>{
       this.setState({
@@ -26,7 +26,7 @@ export default class App extends Component {
       })
     }) 
     
-    fetch("http://localhost:3000/users")
+    fetch("https://hidden-fjord-86683.herokuapp.com/dinos")
     .then(res=>res.json())
     .then(userObj =>{
       this.setState({
@@ -42,7 +42,7 @@ export default class App extends Component {
   }
 
   deleteDino = (cardId) => {
-    const url = `http://localhost:3000/user_cards/${cardId}`
+    const url = `https://hidden-fjord-86683.herokuapp.com/user_cards/${cardId}`
         fetch(url, {method: 'DELETE'})
         .then(res=>res.json())
         .catch(error=>console.error("Error:", error))
@@ -53,7 +53,7 @@ export default class App extends Component {
   }
 
   getDinoCards = () => {
-    fetch("http://localhost:3000/user_cards")
+    fetch("https://hidden-fjord-86683.herokuapp.com/user_cards")
     .then(res=>res.json())
     .then(dinoCardsObj =>{
       console.log(dinoCardsObj)

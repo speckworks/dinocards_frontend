@@ -34,7 +34,7 @@ export default class Nameform extends Component {
         let dinoId = this.props.dinos.filter(dino => dino.img === img)[0].id
         let dinoCardBE = {user_id:1, color_id:colorId, dino_id:dinoId}
         
-        const url = "http://localhost:3000/user_cards"
+        const url = "https://hidden-fjord-86683.herokuapp.com/user_cards"
         fetch(url, {method: 'POST',
         body:JSON.stringify(dinoCardBE),
         headers: {'content-type':'application/json'}
