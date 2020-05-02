@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/dinocards_frontend/static/css/main.afa29195.chunk.css",
-    "main.js": "/dinocards_frontend/static/js/main.ec95001e.chunk.js",
-    "main.js.map": "/dinocards_frontend/static/js/main.ec95001e.chunk.js.map",
+    "main.css": "/dinocards_frontend/static/css/main.456e5eb8.chunk.css",
+    "main.js": "/dinocards_frontend/static/js/main.9ade0957.chunk.js",
+    "main.js.map": "/dinocards_frontend/static/js/main.9ade0957.chunk.js.map",
     "runtime-main.js": "/dinocards_frontend/static/js/runtime-main.7a614b08.js",
     "runtime-main.js.map": "/dinocards_frontend/static/js/runtime-main.7a614b08.js.map",
     "static/js/2.8977541e.chunk.js": "/dinocards_frontend/static/js/2.8977541e.chunk.js",
     "static/js/2.8977541e.chunk.js.map": "/dinocards_frontend/static/js/2.8977541e.chunk.js.map",
     "index.html": "/dinocards_frontend/index.html",
-    "precache-manifest.4b92fa041e135c4432c12a3f43172ca0.js": "/dinocards_frontend/precache-manifest.4b92fa041e135c4432c12a3f43172ca0.js",
+    "precache-manifest.52b60b2bc79acdb3d091b8ff459520f0.js": "/dinocards_frontend/precache-manifest.52b60b2bc79acdb3d091b8ff459520f0.js",
     "service-worker.js": "/dinocards_frontend/service-worker.js",
-    "static/css/main.afa29195.chunk.css.map": "/dinocards_frontend/static/css/main.afa29195.chunk.css.map",
+    "static/css/main.456e5eb8.chunk.css.map": "/dinocards_frontend/static/css/main.456e5eb8.chunk.css.map",
     "static/js/2.8977541e.chunk.js.LICENSE": "/dinocards_frontend/static/js/2.8977541e.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.7a614b08.js",
     "static/js/2.8977541e.chunk.js",
-    "static/css/main.afa29195.chunk.css",
-    "static/js/main.ec95001e.chunk.js"
+    "static/css/main.456e5eb8.chunk.css",
+    "static/js/main.9ade0957.chunk.js"
   ]
 }

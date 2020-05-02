@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/dinocards_frontend/precache-manifest.4b92fa041e135c4432c12a3f43172ca0.js"
+  "/dinocards_frontend/precache-manifest.52b60b2bc79acdb3d091b8ff459520f0.js"
 );
 
 self.addEventListener('message', (event) => {
