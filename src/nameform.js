@@ -71,19 +71,23 @@ export default class Nameform extends Component {
                     </ul>
                     </div>
                 <form onSubmit={this.onSubmit}>
-                           Please Enter Your Name:
+                            <br></br>
+                          3. Please Enter Your Name:
                     <input  onChange={this.handleChange} 
                             type="text"
                             name="value" 
                             value={this.state.name}
                             autoComplete="off"
                             />
+                            <br></br>
                             Dino Chosen:
                     <input  defaultValue={this.state.dinoFormImg}
                             autoComplete="off"></input>
                             Color Chosen:
                     <input  defaultValue={this.state.dinoFormColor}
                             autoComplete="off"></input>
+                            <br></br>
+                            <br></br>
                     <button type="submit" 
                             value="Submit"
                             id="submitButton" 

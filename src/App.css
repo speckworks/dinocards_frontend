@@ -16,13 +16,17 @@ html, body{
 
 .dinoContainer{
   display: flexbox;
+  flex: space-around;
+  margin: 10px;
+  padding: 10px;
 }
 
 .dinobutton{
   border-radius: 100px;
   padding: 50px;
-  width: 20px;
-  height: 20px;
+  width: 520px;
+  height:190px;
+  background-position: center;
   justify-content: space-evenly;
   /* flex: auto; */
   /* align-items: center; */
@@ -32,7 +36,7 @@ html, body{
 .colorbutton{
   border-radius: 25px;
   padding: 20px;
-  width: 20px;
+  width: 130px;
   height: 20px;
 } 
 
