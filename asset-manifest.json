@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/dinocards_frontend/static/css/main.456e5eb8.chunk.css",
-    "main.js": "/dinocards_frontend/static/js/main.9ade0957.chunk.js",
-    "main.js.map": "/dinocards_frontend/static/js/main.9ade0957.chunk.js.map",
-    "runtime-main.js": "/dinocards_frontend/static/js/runtime-main.7a614b08.js",
-    "runtime-main.js.map": "/dinocards_frontend/static/js/runtime-main.7a614b08.js.map",
-    "static/js/2.8977541e.chunk.js": "/dinocards_frontend/static/js/2.8977541e.chunk.js",
-    "static/js/2.8977541e.chunk.js.map": "/dinocards_frontend/static/js/2.8977541e.chunk.js.map",
+    "main.css": "/dinocards_frontend/static/css/main.2d63ac08.chunk.css",
+    "main.js": "/dinocards_frontend/static/js/main.f9015722.chunk.js",
+    "main.js.map": "/dinocards_frontend/static/js/main.f9015722.chunk.js.map",
+    "runtime-main.js": "/dinocards_frontend/static/js/runtime-main.0958e881.js",
+    "runtime-main.js.map": "/dinocards_frontend/static/js/runtime-main.0958e881.js.map",
+    "static/js/2.5b3f19a5.chunk.js": "/dinocards_frontend/static/js/2.5b3f19a5.chunk.js",
+    "static/js/2.5b3f19a5.chunk.js.map": "/dinocards_frontend/static/js/2.5b3f19a5.chunk.js.map",
     "index.html": "/dinocards_frontend/index.html",
-    "precache-manifest.52b60b2bc79acdb3d091b8ff459520f0.js": "/dinocards_frontend/precache-manifest.52b60b2bc79acdb3d091b8ff459520f0.js",
+    "precache-manifest.7830bf6d7e3eecd99a34b22bf6343e33.js": "/dinocards_frontend/precache-manifest.7830bf6d7e3eecd99a34b22bf6343e33.js",
     "service-worker.js": "/dinocards_frontend/service-worker.js",
-    "static/css/main.456e5eb8.chunk.css.map": "/dinocards_frontend/static/css/main.456e5eb8.chunk.css.map",
-    "static/js/2.8977541e.chunk.js.LICENSE": "/dinocards_frontend/static/js/2.8977541e.chunk.js.LICENSE"
+    "static/css/main.2d63ac08.chunk.css.map": "/dinocards_frontend/static/css/main.2d63ac08.chunk.css.map",
+    "static/js/2.5b3f19a5.chunk.js.LICENSE.txt": "/dinocards_frontend/static/js/2.5b3f19a5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.7a614b08.js",
-    "static/js/2.8977541e.chunk.js",
-    "static/css/main.456e5eb8.chunk.css",
-    "static/js/main.9ade0957.chunk.js"
+    "static/js/runtime-main.0958e881.js",
+    "static/js/2.5b3f19a5.chunk.js",
+    "static/css/main.2d63ac08.chunk.css",
+    "static/js/main.f9015722.chunk.js"
   ]
 }
