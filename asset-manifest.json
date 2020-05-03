@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/dinocards_frontend/static/css/main.2d63ac08.chunk.css",
+    "main.css": "/dinocards_frontend/static/css/main.4436aebe.chunk.css",
     "main.js": "/dinocards_frontend/static/js/main.f9015722.chunk.js",
     "main.js.map": "/dinocards_frontend/static/js/main.f9015722.chunk.js.map",
     "runtime-main.js": "/dinocards_frontend/static/js/runtime-main.0958e881.js",
@@ -8,15 +8,15 @@
     "static/js/2.5b3f19a5.chunk.js": "/dinocards_frontend/static/js/2.5b3f19a5.chunk.js",
     "static/js/2.5b3f19a5.chunk.js.map": "/dinocards_frontend/static/js/2.5b3f19a5.chunk.js.map",
     "index.html": "/dinocards_frontend/index.html",
-    "precache-manifest.7830bf6d7e3eecd99a34b22bf6343e33.js": "/dinocards_frontend/precache-manifest.7830bf6d7e3eecd99a34b22bf6343e33.js",
+    "precache-manifest.77132ecbacadd9e7c1fa9935d4b13493.js": "/dinocards_frontend/precache-manifest.77132ecbacadd9e7c1fa9935d4b13493.js",
     "service-worker.js": "/dinocards_frontend/service-worker.js",
-    "static/css/main.2d63ac08.chunk.css.map": "/dinocards_frontend/static/css/main.2d63ac08.chunk.css.map",
+    "static/css/main.4436aebe.chunk.css.map": "/dinocards_frontend/static/css/main.4436aebe.chunk.css.map",
     "static/js/2.5b3f19a5.chunk.js.LICENSE.txt": "/dinocards_frontend/static/js/2.5b3f19a5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0958e881.js",
     "static/js/2.5b3f19a5.chunk.js",
-    "static/css/main.2d63ac08.chunk.css",
+    "static/css/main.4436aebe.chunk.css",
     "static/js/main.f9015722.chunk.js"
   ]
 }
