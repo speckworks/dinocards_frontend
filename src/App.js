@@ -77,6 +77,7 @@ export default class App extends Component {
           <Carousel 
             dinocards={this.state.dinocards}
             deleteDino={this.deleteDino}
+            reverse={this.reverse}
           />          
           <CardList 
                 colors={this.state.colors}

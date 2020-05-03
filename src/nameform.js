@@ -87,7 +87,9 @@ export default class Nameform extends Component {
                     <button type="submit" 
                             value="Submit"
                             id="submitButton" 
-                            style={{className:"formSubmit"}} >Submit</button>
+                            style={{className:"formSubmit",
+                            height:"100px",
+                            borderRadius:25}} >Submit</button>
                 </form>
             </div>
         )

@@ -135,14 +135,14 @@ display: inline-block;
   overflow: hidden;
   position: relative;
   perspective: 100px;
-  width: 33%;
+  width: 30%;
 }
 
 .carousel :first-child{
 }
 
 .carousel-cell {
-  width: 290;
+  width: 66%;
   height: 100%;
   /* flex-box, center image in cell */
   display: -webkit-box;
@@ -154,6 +154,7 @@ display: inline-block;
           justify-content: center;
   -webkit-align-items: center;
           align-items: center;
+          z-index: 9999;
 }
 
 .carousel-cell img {
@@ -209,7 +210,7 @@ display: inline-block;
   fill: black;
 }
 .flickity-prev-next-button.no-svg {
-  color:black;
+  color:white;
 }
 /* closer to edge */
 .flickity-prev-next-button.previous { left: 0; }

@@ -20,7 +20,17 @@ export default function Carousel(props){
         <div className="carousel"
         // style={{overFlow:"hidden"}}
         >
+
         <Flickity>{carouselcard}</Flickity>
+        <br></br>
+        <br></br>
+        <button 
+                onClick={
+                    ()=>props.reverse(carouselcard)
+                    }
+                id="reverse"
+                    >Reverse Cards
+                </button>
         </div>
     )
 }  

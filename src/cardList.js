@@ -26,13 +26,13 @@ export default class CardList extends Component {
                 colors={this.props.colors}
                 dinos={this.props.dinos} 
                 handleNameSubmit={this.props.handleNameSubmit}/>
-                <button 
+                {/* <button 
                 onClick={
                     ()=>this.props.reverse(dinocard)
                     }
                 id="reverse"
                     >Reverse
-                </button>
+                </button> */}
                  </div>
 
         )
