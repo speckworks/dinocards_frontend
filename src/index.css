@@ -36,9 +36,9 @@ font-size: 16px;
 
 .title{
   font-size: 50px;
+  text-align: center;
   text-overflow:none;
   height: 10%;
   width:100%;
-  transform: translate(450px,0px);
   font-family: 'Kaushan Script', cursive;
 }

@@ -18,6 +18,7 @@ html, body{
 
 
 .app {
+  text-align: center;
   align-items: center;
  
 }
@@ -38,6 +39,7 @@ html, body{
 
 .dinobutton{
   border-radius: 100px;
+  margin: 10px;
   padding: 50px;
   width: 220px;
   height:100px;
@@ -69,14 +71,16 @@ html, body{
 .colorbutton{
   display: flex;
   flex-flow: row;
+  text-align: center;
   border-radius:0;
   padding: 20px;
-  width: 130px;
+  width: 100%;
   height: 20px;
 } 
 
 .colorButtonBox{
   display: flex;
+  text-align: center;
   flex-flow: row;
 }
 
@@ -97,7 +101,7 @@ html, body{
 }
 
 .card{ 
-font-family: fantasy;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 font-size: large;
 display:flex;
 align-items: flex-end;
@@ -116,19 +120,25 @@ transform: translate(0px, 34px);
   display: flex;
   justify-content: space-between;
   padding:5px;
-  color: whitesmoke;
 }
-.card-list{
+.card-list{  
+  color: whitesmoke;
 display: inline-block;
 }
 
 .carousel {
+  border-radius: 50px;
+  font-family: 'Kaushan Script', cursive;
   display: inline-block;
-  background-image: url('./parchment.jpg');
+  background-image: url('./marbledpaper1.jpg');
   height:110%;
   overflow: hidden;
   position: relative;
+  perspective: 100px;
   width: 33%;
+}
+
+.carousel :first-child{
 }
 
 .carousel-cell {

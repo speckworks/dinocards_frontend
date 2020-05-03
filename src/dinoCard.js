@@ -8,8 +8,17 @@ export default class dinoCard extends Component {
             <Card className="card carousel-cell" style={{
                 background:card.color}}>
             <Image src={card.img}></Image>
-            <Card.Content className="cardContent">
-              <Card.Header>User Name: {card.name}</Card.Header>
+            <Card.Content className="cardContent"
+                          
+            >
+              <Card.Header style={{
+                                    color:'white',
+                                    display:"flex",
+                                    flexFlow:"rowReverse",
+                                    justifyContent:"flexEnd",
+                                    width: "130px", 
+                                    height:"235px"
+                                    }}>User Name: {card.name}</Card.Header>
               <button onClick={()=>this.props.deleteDino(card.id)} 
                     className="deleteButton">Delete</button>
               <Card.Description style={{
