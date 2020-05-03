@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/dinocards_frontend/static/css/main.56bb3231.chunk.css",
-    "main.js": "/dinocards_frontend/static/js/main.2c65074d.chunk.js",
-    "main.js.map": "/dinocards_frontend/static/js/main.2c65074d.chunk.js.map",
+    "main.css": "/dinocards_frontend/static/css/main.b62d3a31.chunk.css",
+    "main.js": "/dinocards_frontend/static/js/main.96fca8f7.chunk.js",
+    "main.js.map": "/dinocards_frontend/static/js/main.96fca8f7.chunk.js.map",
     "runtime-main.js": "/dinocards_frontend/static/js/runtime-main.0958e881.js",
     "runtime-main.js.map": "/dinocards_frontend/static/js/runtime-main.0958e881.js.map",
-    "static/js/2.94c8b0ab.chunk.js": "/dinocards_frontend/static/js/2.94c8b0ab.chunk.js",
-    "static/js/2.94c8b0ab.chunk.js.map": "/dinocards_frontend/static/js/2.94c8b0ab.chunk.js.map",
+    "static/js/2.07b0eccb.chunk.js": "/dinocards_frontend/static/js/2.07b0eccb.chunk.js",
+    "static/js/2.07b0eccb.chunk.js.map": "/dinocards_frontend/static/js/2.07b0eccb.chunk.js.map",
     "index.html": "/dinocards_frontend/index.html",
-    "precache-manifest.b2b3d9e641f41526af6c29665d8d0169.js": "/dinocards_frontend/precache-manifest.b2b3d9e641f41526af6c29665d8d0169.js",
+    "precache-manifest.3e418ba08ae7c345fd952cb1f0a4007d.js": "/dinocards_frontend/precache-manifest.3e418ba08ae7c345fd952cb1f0a4007d.js",
     "service-worker.js": "/dinocards_frontend/service-worker.js",
-    "static/css/main.56bb3231.chunk.css.map": "/dinocards_frontend/static/css/main.56bb3231.chunk.css.map",
-    "static/js/2.94c8b0ab.chunk.js.LICENSE.txt": "/dinocards_frontend/static/js/2.94c8b0ab.chunk.js.LICENSE.txt",
-    "static/media/parchment.jpg": "/dinocards_frontend/static/media/parchment.a0110cea.jpg"
+    "static/css/main.b62d3a31.chunk.css.map": "/dinocards_frontend/static/css/main.b62d3a31.chunk.css.map",
+    "static/js/2.07b0eccb.chunk.js.LICENSE.txt": "/dinocards_frontend/static/js/2.07b0eccb.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/dinocards_frontend/static/media/marbledpaper1.e4930d26.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.0958e881.js",
-    "static/js/2.94c8b0ab.chunk.js",
-    "static/css/main.56bb3231.chunk.css",
-    "static/js/main.2c65074d.chunk.js"
+    "static/js/2.07b0eccb.chunk.js",
+    "static/css/main.b62d3a31.chunk.css",
+    "static/js/main.96fca8f7.chunk.js"
   ]
 }
