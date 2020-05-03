@@ -8,7 +8,7 @@ export default class dinoCard extends Component {
             <Card className="card carousel-cell" style={{
                 background:card.color}}>
             <Image src={card.img}
-            style={{height:"240px", width:"100%"}}></Image>
+            style={{}}></Image>
             <Card.Content className="cardContent"
                           
             >
