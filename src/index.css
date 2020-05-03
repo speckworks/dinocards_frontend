@@ -38,7 +38,7 @@ font-size: 16px;
   font-size: 50px;
   text-overflow:none;
   height: 10%;
-  width:600px;
-  transform: translate(50px,0px);
+  width:100%;
+  transform: translate(450px,0px);
   font-family: 'Kaushan Script', cursive;
 }
