@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4bbfd0d5aee9f7b344aa4df753660af5",
+    "revision": "ce8ce4db9af493bb7273b0ad19eadafc",
     "url": "/dinocards_frontend/index.html"
   },
   {
-    "revision": "60044dd1b5533128bb6e",
-    "url": "/dinocards_frontend/static/css/main.7b5eb763.chunk.css"
+    "revision": "cb82198a2ed1d430213d",
+    "url": "/dinocards_frontend/static/css/main.8708fe7d.chunk.css"
   },
   {
     "revision": "f1bf9d40de5ab61e6495",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dinocards_frontend/static/js/2.07b0eccb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "60044dd1b5533128bb6e",
-    "url": "/dinocards_frontend/static/js/main.efbdf977.chunk.js"
+    "revision": "cb82198a2ed1d430213d",
+    "url": "/dinocards_frontend/static/js/main.864d97ed.chunk.js"
   },
   {
     "revision": "794204de400c2a97c5b7",
