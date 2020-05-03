@@ -1,6 +1,7 @@
 import React from 'react';
 import Flickity from "react-flickity-component";
 import DinoCard from "./dinoCard.js"
+import background from "./parchment.jpg"
 
 import "./flickity.css";
 
@@ -17,7 +18,8 @@ export default function Carousel(props){
         })
     }
     return (
-        <div className="carousel">
+        <div className="carousel"
+        style={{'backgroundImage': `${'url(background)'}`}}>
         <Flickity>{carouselcard}</Flickity>
         </div>
     )

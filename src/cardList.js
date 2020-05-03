@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import DinoCard from './dinoCard.js';
 import Nameform from './nameform.js';
-import Carousel from './carousel.js';
 import './App.css';
 import "./flickity.css";
 
