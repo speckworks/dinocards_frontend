@@ -18,9 +18,21 @@ export default class DinoButton extends Component {
                     })
         return (
             <div>
+            <>
+            {this.props.dinos 
+            ?          
+            <div>
             <ul>
             {dinosArray}
             </ul>
+            </div>
+            :
+            <div class="preloader">
+            <img src="spinner.svg" alt="spinner"></img>
+            <text>loading...</text>
+            </div>
+            }
+            </>
             </div>
         )
     }

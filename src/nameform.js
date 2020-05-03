@@ -61,15 +61,11 @@ export default class Nameform extends Component {
                       className="dinobutton" 
                       dinos={this.props.dinos}/>
                     </div>
-
-                    <div>
                     <ul>2. Choose a Color.</ul>
-                    <ul className="color button">
+                    <ul>
                     <ColorButton  handleColorClick={this.handleColorClick} 
                           colors={this.props.colors}/>
-
                     </ul>
-                    </div>
                 <form onSubmit={this.onSubmit}>
                             <br></br>
                           3. Please Enter Your Name:
@@ -80,12 +76,12 @@ export default class Nameform extends Component {
                             autoComplete="off"
                             />
                             <br></br>
-                            Dino Chosen:
-                    <input  defaultValue={this.state.dinoFormImg}
+                            {/* Dino Chosen: */}
+                    {/* <input  defaultValue={this.state.dinoFormImg}
                             autoComplete="off"></input>
                             Color Chosen:
                     <input  defaultValue={this.state.dinoFormColor}
-                            autoComplete="off"></input>
+                            autoComplete="off"></input> */}
                             <br></br>
                             <br></br>
                     <button type="submit" 

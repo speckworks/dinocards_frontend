@@ -11,7 +11,7 @@ export default class colorButton extends Component {
                             className="colorbutton"></button>
                     })
         return (
-            <div>
+            <div className="colorButtonBox">
                 {colorArray}
             </div>
         )

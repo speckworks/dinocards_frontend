@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './App.css';
 import CardList from './cardList.js'
+import Carousel from './carousel.js'
 
 export default class App extends Component {
     state = { dinos:[],
@@ -71,7 +72,12 @@ export default class App extends Component {
   render() {
     return (
       <div className="app">
-          <p id="title">Dinosaur Cards</p>
+          <p className="title">Dinosaur Cards</p>
+          <div className="gridDiv">
+          <Carousel 
+            dinocards={this.state.dinocards}
+            deleteDino={this.deleteDino}
+          />          
           <CardList 
                 colors={this.state.colors}
                 dinos={this.state.dinos} 
@@ -81,6 +87,8 @@ export default class App extends Component {
                 deleteDino={this.deleteDino}
                 reverse={this.reverse}
                 />
+          </div>
+
       </div>
     )
   }

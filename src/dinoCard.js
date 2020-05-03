@@ -4,11 +4,10 @@ import { Card, Image } from 'semantic-ui-react'
 export default class dinoCard extends Component {
     render() {
         let card = this.props.dinocard
-        // {console.log("dinocard", this.props.dinocard)}
         return (
-            <Card  style={{
+            <Card className="card carousel-cell" style={{
                 background:card.color}}>
-            <Image src={card.img}/>
+            <Image src={card.img}></Image>
             <Card.Content className="cardContent">
               <Card.Header>User Name: {card.name}</Card.Header>
               <button onClick={()=>this.props.deleteDino(card.id)} 

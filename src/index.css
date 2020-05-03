@@ -34,15 +34,11 @@ font-size: 16px;
   padding: 10px;
 }
 
-#title{
+.title{
   font-size: 50px;
   text-overflow:none;
-  width:300px;
+  height: 10%;
+  width:600px;
   transform: translate(50px,0px);
   font-family: 'Kaushan Script', cursive;
-}
-
-#card-list{
-  display:flex;
-  flex-direction:row;
 }
