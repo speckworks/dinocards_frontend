@@ -23,7 +23,8 @@ export default function Carousel(props){
 
         <Flickity>{carouselcard}</Flickity>
         <br></br>
-        <br></br>
+        <br></br>{
+        (carouselcard) ?
         <button 
                 onClick={
                     ()=>props.reverse(carouselcard)
@@ -31,6 +32,10 @@ export default function Carousel(props){
                 id="reverse"
                     >Reverse Cards
                 </button>
+        
+        :
+        <></>
+        }
         </div>
     )
 }  
