@@ -19,6 +19,7 @@ yarn add semantic-ui-react@0.88.2
 (for a very smooth-looking dinosaur card"
  </li>
  </ul>
+ 
 ## Available Scripts
 
 In the project directory, you can run:
