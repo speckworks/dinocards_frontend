@@ -1,9 +1,9 @@
 This is an app that allows a user to create custom "Dinosaur Cards" with user input.  
 One can: 
 <ol>
-1. Name a card, 
-2. Select a Dinosaur 
-3. Add a background color to it.  
+ <li>1. Name a card </li>
+ <li>2. Select a Dinosaur </li> 
+ <li>3. Add a background color to it. </li>  
 </ol>
 
 All Dinosaur images were sourced courtesy of https://dinosaurpictures.org/. 
