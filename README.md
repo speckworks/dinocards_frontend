@@ -4,11 +4,14 @@ All Dinosaur images were sourced courtesy of https://dinosaurpictures.org/.
 
 It was created with a Rails backend and a React.js front end. 
 
-
-
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Recently added dependencies! 
+## yarn add flickity@2.2.1
+## yarn add react-flickity-component@3.5.0
+(for a very classy carousel display of your cards)
+## yarn add semantic-ui-react@0.88.2
+(for a very smooth-looking dinosaur card"
 ## Available Scripts
 
 In the project directory, you can run:
