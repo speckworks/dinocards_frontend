@@ -11,6 +11,9 @@ All Dinosaur images were sourced courtesy of https://dinosaurpictures.org/.
 It was created with a Rails backend and a React.js front end. 
 
 ### Recently added dependencies! 
+Be sure to 
+### `yarn install`
+and then, if necessary:
 <ul>
  <li>
  yarn add flickity@2.2.1
@@ -23,6 +26,8 @@ yarn add semantic-ui-react@0.88.2
 (for a very smooth-looking dinosaur card"
  </li>
  </ul>
+ 
+ 
  
 ## Available Scripts
 
