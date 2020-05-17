@@ -13,20 +13,7 @@ It was created with a Rails backend and a React.js front end.
 ### Recently added dependencies! 
 Be sure to 
 ### `yarn install`
-and then, if necessary:
-<ul>
- <li>
- yarn add flickity@2.2.1
- </li>
- <li>
- yarn add react-flickity-component@3.5.0
-(for a very classy carousel display of your cards)
- <li>
-yarn add semantic-ui-react@0.88.2
-(for a very smooth-looking dinosaur card"
- </li>
- </ul>
- 
+
  
  
 ## Available Scripts
